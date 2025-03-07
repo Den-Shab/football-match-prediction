@@ -15,20 +15,20 @@
 
 ## Установка:
 1) Клонировать репозиторий
-   git clone https://github.com/Den-Shab/football-match-prediction.git
-   cd football-match-prediction
+   - git clone https://github.com/Den-Shab/football-match-prediction.git
+   - cd football-match-prediction
 2) Установить зависимости
-   pip install -r requirements.txt
+   - pip install -r requirements.txt
 3) Установить глобальную переменную в корень репозитория
-   export PYTHONPATH=${PYTHONPATH}:/path/to/repo
+   - export PYTHONPATH=${PYTHONPATH}:/path/to/repo
 5) Выполнить препроцессинг
-   python src/data_preprocessing.py
+   - python src/data_preprocessing.py
 6) Обучить модель(можно использовать уже обученную, тогда пропуск шага)
-   python src/train.py
+   - python src/train.py
    6.1) Обучить модель с подбором оптимальных гиперпараметров
-        python src/train.py tune_hyperparams
+        - python src/train.py tune_hyperparams
 7) Запустить графический интерфейс и использовать приложение
-   python predictor_app.py
+   - python predictor_app.py
 
 ## Результаты
 В целом, получилось достаточно интересное решение, которое показало неплохие результаты.
