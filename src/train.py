@@ -9,6 +9,7 @@ from src.utils.helpers import outer_default, inner_default
 import json
 from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
+import sys
 
 
 class FootballTrainer:
@@ -157,5 +158,9 @@ class FootballTrainer:
 
 
 if __name__ == "__main__":
+
+    mode = False
+    if 'tune_hyperparams' in sys.argv:
+        mode = True
     trainer = FootballTrainer('data/processed_matches.csv')
-    trainer.train()
+    trainer.train(tune_hyperparams=mode)
