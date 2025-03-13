@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/7193a18a-93c0-4cde-9c17-9dce7a554108)
 
 ## План: 
-1) Собрать данные из датасетов и других открытых источников (ссылка на данные - https://www.kaggle.com/code/ammarashraf1/english-premier-league-analysis)
+1) Собрать данные из датасетов и других открытых источников (ссылка на данные - https://www.kaggle.com/datasets/panaaaaa/english-premier-league-and-championship-full-dataset)
 2) Выбрать модель
 3) Оценить модель на реальных событиях, которые произойдут в ближайшем будущем
 
@@ -19,6 +19,8 @@
    - cd football-match-prediction
 2) Установить зависимости
    - pip install -r requirements.txt
+3) Скачать данные по ссылке https://www.kaggle.com/datasets/panaaaaa/english-premier-league-and-championship-full-dataset
+и разместить в директории /path/to/repo/data
 3) Установить глобальную переменную в корень репозитория
    - export PYTHONPATH=${PYTHONPATH}:/path/to/repo
 5) Выполнить препроцессинг

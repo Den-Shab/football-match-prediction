@@ -110,7 +110,7 @@ def add_team_ranks(df):
 
 
 if __name__ == "__main__":
-    raw_df = preprocess_data('data/England_CSV.csv')
+    raw_df = preprocess_data('data/England CSV.csv')
     
     processed_df = generate_all_features(raw_df)
     

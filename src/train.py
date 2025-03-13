@@ -10,6 +10,7 @@ import json
 from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 import sys
+from pathlib import Path
 
 
 class FootballTrainer:
@@ -148,7 +149,11 @@ class FootballTrainer:
 
         self._save_artifacts()
         self._generate_report(X_test, y_test)
-        
+
+        script_dir = Path(__file__).resolve().parent.parent
+
+        target_path = script_dir / "models"
+        target_path.mkdir(parents=True, exist_ok=True)
         joblib.dump(self.model, 'models/football_model.pkl')
         joblib.dump(self.label_encoder, 'models/label_encoder.pkl')
         joblib.dump(self.season_tables, 'models/season_tables.pkl')
